@@ -1,5 +1,5 @@
 {
-  "name": "your-vendor/laravel-whatsapp-cloud-api",
+  "name": "BiztechEG/laravel-whatsapp-cloud-api",
   "description": "A Laravel package for integrating with the WhatsApp Cloud API",
   "type": "library",
   "keywords": [
