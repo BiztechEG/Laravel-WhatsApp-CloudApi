@@ -27,6 +27,18 @@ Publish the configuration file:
 php artisan vendor:publish --provider="BiztechEG\WhatsAppCloudApi\Providers\WhatsAppServiceProvider" --tag=config
 ```
 
+Publish the migrations file:
+
+```bash
+php artisan vendor:publish --provider="BiztechEG\WhatsAppCloudApi\Providers\WhatsAppServiceProvider" --tag=migrations
+```
+
+Publish the views file:
+
+```bash
+php artisan vendor:publish --provider="BiztechEG\WhatsAppCloudApi\Providers\WhatsAppServiceProvider" --tag=views
+```
+
 Update your `.env` file with the following variables:
 
 ```dotenv
