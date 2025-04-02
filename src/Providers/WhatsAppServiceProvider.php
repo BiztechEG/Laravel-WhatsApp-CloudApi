@@ -16,6 +16,7 @@ class WhatsAppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
         // Merge package configuration.
         $this->mergeConfigFrom(__DIR__.'/../../config/whatsapp.php', 'whatsappApi');
 
@@ -41,6 +42,17 @@ class WhatsAppServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../config/whatsapp.php' => config_path('whatsapp.php'),
         ], 'config');
+        
+        // Publish migration files.
+        $this->publishes([
+            __DIR__.'/../../database/migrations/' => database_path('migrations'),
+        ], 'migrations');
+
+        // Publish view files.
+        $this->publishes([
+            __DIR__.'/../../resources/views' => resource_path('views/vendor/whatsapp'),
+        ], 'views');
+        
 
         // Load the webhook and playground routes.
         if (!$this->app->routesAreCached()) {
