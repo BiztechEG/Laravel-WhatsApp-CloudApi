@@ -16,7 +16,7 @@ A Laravel package for integrating with the WhatsApp Cloud API. This package supp
 Install the package via Composer:
 
 ```bash
-composer require your-vendor/laravel-whatsapp-cloud-api
+composer require BiztechEG/laravel-whatsapp-cloud-api
 ```
 
 ## Configuration
